@@ -100,8 +100,6 @@
 
 ## 🛠️ 플로우 구조
 
-<img width="1200" height="600" alt="Image" src="https://github.com/user-attachments/assets/efcbcc95-25f5-4b3d-9165-10e86ac5ed8a" />
-
 <img width="1200" height="650" alt="Image" src="https://github.com/user-attachments/assets/9d7f1eaa-7249-417a-8ff9-375e1344fa8f" />
 
 * 데이터 전처리
