@@ -42,49 +42,32 @@
 
 ## 📕 프로젝트 발단
 
-보험 약관이 너무 복잡하고 소비자가 이해하기 어렵다는 사회적 지적이 늘고 있습니다.  
-<img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/45202a26-0fa5-40c7-973f-9baea4bf5f85" /><img width="500" height="250" alt="Image" src="https://github.com/user-attachments/assets/e3743b6c-fcb2-4616-acdb-6b26408f689a" />
-(보험신보. 2020.04.27)(nate뉴스. 2025.02.13)
+## 1. 프로젝트 배경
+보험 약관은 해마다 더 복잡해지고 길어지고 있습니다. 일부 상품은 500~900페이지에 달하며, 전문 용어와 복잡한 조항으로 인해 소비자가 내용을 이해하기 어렵습니다.  
+이로 인해 **필요한 정보를 신속하게 찾기 어렵고**, 잘못 이해하거나 중요한 내용을 놓칠 위험이 큽니다.
 
+- 방대한 분량과 복잡한 구조로 **일반 소비자가 읽고 이해하기 어려움**  
+- 필요한 조항을 찾기 위해 전체 문서를 탐색해야 하는 **비효율성**  
+- 법률·보험 용어의 난해함으로 인한 **정보 접근성 저하**  
 
-보험사의 약관은 매년 더 복잡해지고 길어지며, 가입자들에게는 쉽고 가볍게 읽기 어려운 문서가 되어가고 있습니다. 이 프로젝트는 바로 그 문제에서 출발했습니다.
-
-보험 약관은 때로는 300페이지, 심지어 500페이지를 넘어가기도 합니다. 이렇게 방대한 문서를 고객이 처음부터 끝까지 살펴보는 것은 현실적으로 어렵습니다.
-
-|약관문서|페이지 수|
-|-----|-----|
-|DB운전자보험|900|
-|KB_Direct_LngtrmDriver(24755)_202508|634|
-|meritzfire|639|
-|무배당 삼성화재 다이렉트 국방가족안심 운전자보험|331|
-|무배당 삼성화재 다이렉트 운전자보험(2504.23)|323|
-|무배당 삼성화재 운전자보험 안전운전 파트너 플러스(2504.8) 1종(연만기, 납입면제형)|528|
-|무배당 삼성화재 운전자보험 안전운전 파트너 플러스(2504.8) 2종(연만기, 일반형)|522|
-|한화 다이렉트 3400운전자보험 무배당|209|
-|한화 시그니처 여성 운전자상해보험 무배당2504|430|
-|한화 운전자상해보험 무배당 2504|544|
-|현대해상약관|544|
-
-### 약관 예시
-<img width="900" height="600" alt="Image" src="https://github.com/user-attachments/assets/33de0f2c-6dc9-4e1a-8ce0-f60fd56ad948" />
-
--현대해상-
-
-### 약관의 문제점
-
-* 소비자에게 매우 불리한 방대한 내용
-  * 빼곡한 글자와 어려운 용어 난무
-  * 500 페이지가 넘는 엄청난 양
-* 잦은 개정 및 강제성
-  * 일정한 주기마다 잦은 개정으로 소비자가 정확한 내용 접근 어려움
-  * 동의를 해야 가입 가능한 강제성
-  * '약관에 다 있었다'라는 마법의 문장으로 보험회사가 유리하게 해석 가능
+- 약관 분량 예시
+| 약관문서 | 페이지 수 |
+|----------|-----------|
+| DB 운전자보험 | 900 |
+| KB Direct 장기 운전자보험 | 634 |
+| 무배당 삼성화재 운전자보험 안전운전 파트너 플러스 | 522~528 |
+| 한화 운전자상해보험 무배당 | 544 |
 
 ## ✅ 프로젝트 배경 및 목적
+- **RAG(Retrieval-Augmented Generation)** 기반 챗봇으로 방대한 약관에서 **필요한 정보를 빠르고 정확하게 제공**  
+- 사용자가 **자연어로 질문**하면, 약관 원문에서 관련 내용을 찾아 **간결하고 이해하기 쉽게 요약**  
+- 소비자의 **정보 접근성 향상**과 **의사결정 지원**
 
-운전자 보험 약관은 내용이 너무 복잡해 고객이 원하는 정보를 직접 찾아내기 어렵습니다. 
-
-이 프로젝트의 RAG 챗봇은 방대한 약관 속에서 핵심 정보를 추출하여, 사용자가 궁금한 내용을 신뢰성 있게 확인할 수 있도록 돕습니다.
+## 주요 기능
+- **자연어 질의응답**  
+- **약관 검색 및 요약**  
+- **다양한 보험사·상품 지원**  
+- **전문 용어 해설**
 
 ## ❤️ 기대효과
 
@@ -98,7 +81,9 @@
   *  다양한 상황에 대한 응대를 챗봇이 대신함으로써, 콜센터 직원들이 더 복잡하고 전문적인 상담에 집중할 수 있게 되어 업무 효율이 증대할 수 있습니다.
 
 
-## 🛠️ 플로우 구조
+## 🛠️ 전체 플로우
+
+<img width="1200" height="600" alt="Image" src="https://github.com/user-attachments/assets/efcbcc95-25f5-4b3d-9165-10e86ac5ed8a" />
 
 <img width="1200" height="650" alt="Image" src="https://github.com/user-attachments/assets/9d7f1eaa-7249-417a-8ff9-375e1344fa8f" />
 
@@ -124,72 +109,40 @@
 
 <img width="1058" height="877" alt="Image" src="https://github.com/user-attachments/assets/a0726b49-9072-4d6d-8eae-17097c40419e" />
 
-* 신뢰성 확보 -> 근거 없는 답변을 금지하고, 자료 부재 시 보험사 공식 연락처·링크로 안내
-  
-* 개인 맞춤 기반 추천 서비스 -> 사용자 특성(사고·과실·연령) 기반으로 비교·추천 근거를 구체적으로 제시
 
+<img width="1200" height="650" alt="Image" src="https://github.com/user-attachments/assets/34de3e8b-0936-4a46-bc78-561973e9aa61" />
 
-### 성능 평가
-
-* 1차 Prompt
-
-|지표|수치|설명|
+|faithfulness|answer_relevancy|nv_context_relevance|
 |-----|-----|-----|
-|faithfulness|0.339|답변 충실도, 환각 방지|
-|answer_relevancy|0.171|답변의 질문 관련성|
-|nv_context_relevance|0.408|검색한 문서의 답변 관련성|
-
-
-* 2차 Prompt
-
-|지표|수치|설명|
-|-----|-----|-----|
-|faithfulness|0.392|답변 충실도, 환각 방지|
-|answer_relevancy|0.497|답변의 질문 관련성|
-|nv_context_relevance|0.392|검색한 문서의 답변 관련성|
-
-* 최종 Prompt
-
-|지표|수치|설명|
-|-----|-----|-----|
-|faithfulness|0.416|답변 충실도, 환각 방지|
-|answer_relevancy|0.316|답변의 질문 관련성|
-|nv_context_relevance|0.400|검색한 문서의 답변 관련성|
-
+|답변 충실도, 환각 방지|답변이 원래 질문에 얼마나 직접적으로 관련되어 있는지를 측정|검색한 문서들이 실제로 질문에 답변하는 데 얼마나 유용한 정보를 담고 있는지 측정|
 
 
 
 ## Streamlit
-<img width="1905" height="1016" alt="Image" src="https://github.com/user-attachments/assets/5d27a1e3-3913-404e-89df-0bd4c77684ed" />
+<img width="1916" height="888" alt="Image" src="https://github.com/user-attachments/assets/6ada762b-6be4-45eb-8a1a-1469bcee3b9a" />
 
 
 ### 연령별 예시
 
-* 30대
+* 20대
 
-<img width="1100" height="751" alt="Image" src="https://github.com/user-attachments/assets/6eb04024-738b-477f-8560-3dbe02202ddb" />
-
-* 40대
-
-<img width="1071" height="754" alt="Image" src="https://github.com/user-attachments/assets/e6fc8763-70fb-48e5-b9bd-517e85a40c45" />
+<img width="1142" height="766" alt="Image" src="https://github.com/user-attachments/assets/2e041c33-f606-4f63-ad56-922587400db7" />
 
 * 특정 나이
 
-<img width="1440" height="685" alt="image" src="https://github.com/user-attachments/assets/ae4ee676-574a-4c32-8931-929ef851a7ce" />
+<img width="1130" height="774" alt="Image" src="https://github.com/user-attachments/assets/8b28d610-76e5-4741-ac4b-737b296c24c9" />
 
 
 ### 상황별 예시
 
-* 횡단보도에서 무단횡단 보행자 사고
-<img width="1094" height="803" alt="Image" src="https://github.com/user-attachments/assets/b91b9abb-6565-4110-8153-c555f8e3aaaf" />
-<img width="1029" height="694" alt="Image" src="https://github.com/user-attachments/assets/4ec8e3d9-7886-46f4-b395-9343a9d57860" />
-<img width="1071" height="871" alt="Image" src="https://github.com/user-attachments/assets/4e50635f-1a7c-4cb6-9067-5db611d23ab3" />
-
+* 무단횡단 보행자 사고
+<img width="1156" height="692" alt="Image" src="https://github.com/user-attachments/assets/a6efe2bb-fd34-4f31-90dc-aaad292a4594" />
+<img width="1146" height="714" alt="Image" src="https://github.com/user-attachments/assets/8ac5ec5c-fae2-4fec-918f-9e3e3b92d7d7" />
 
 ## 프로젝트 확장성
 
 * 다양한 보험 상품으로의 적용 가능
-  * 건강보험, 화재보험 등 다양한 약관을 반영하면 햇봇의 목적을 바로 바꿀 수 있게 됩니다.
+  * 건강보험, 화재보험 등 다양한 약관을 반영하면 챗봇의 목적을 바꿀 수 있게 됩니다.
 * 판례 데이터 반영
   * 파인 튜닝(Fine-Tuning)을 통한 판례 기반의 추론 강화
   * 법적 기반을 통한 방향성 확보
@@ -199,14 +152,14 @@
 
 * 권도원
 
-* 기현택
+* 기현택 : 조용한 스타일의 팀장임에도 다들 너무 잘 해주셔서 감사합니다. 발표 준비를 하면서 RAG와 LLM에 대해 많은 것을 공부할 수 있었던 좋은 시간이었습니다.
   
-* 유의정
+* 유의정 : 임베딩과 데이터베이스 저장부터 RAG의 전체 코드를 직접 작성하며 구조와 흐름에 대한 이해를 깊게 할 수 있었습니다. 또한 팀원들과의 원활한 협력을 통해 프로젝트를 더욱 완성도 있게 마무리할 수 있었습니다.(ꔷ̥̑.̮ꔷ̥̑) 
   
 * 이소정 : 이번 프로젝트에서는 데이터베이스부터 RAG 모델까지 직접 구현하며 문제를 해결하는 과정에서 많은 성장을 느낄 수 있었습니다. 또한 팀원들과 협력하며 서로의 아이디어를 보태 더 완성도 높은 결과를 만들어낼 수 있었습니다.
   
-* 이준원
+* 이준원 : RAG 프로젝트를 통해 전체적인 구조와 흐름을 이해할 수 있었고, 특히 Retriever와 Embedding의 중요성을 깨달었던 프로젝트였습니다! 또한 적극적이고 열정적인 팀원들과 중심을 잘 잡아주신 팀장님 덕분에 프로젝트를 수월하게 마무리할 수 있었습니다:)
   
-* 한승희
+* 한승희 : 원했던 주제이기도 하고 직접 prompt 엔지니어링을 해볼 수 있어서 뜻깊은 시간이였습니다. 모두들 수고하셨습니다 ﻿~❥
 
 
